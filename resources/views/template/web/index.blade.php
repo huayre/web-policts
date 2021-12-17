@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>pomato</title>
+    <title>JP | Irazola</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -65,8 +65,9 @@
                                 <ul class="menu-area-main">
                                     <li class="active"> <a href="index.html">Inicio</a> </li>
                                     <li><a href="brand.html">Conoce a Nelson Huayre</a></li>
-                                    <li><a href="special.html">Plana de Regidores</a></li>
+                                    <li><a href="special.html">Regidores</a></li>
                                     <li><a href="contact.html">Plan de Trabajo</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" style="background-color: red;padding: 10px;border-radius: 20%"></i></a></li>
                                 </ul>
                             </nav>
                         </div>

@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('inicio');
+
+//Auth
+Route::get('home', function () {
+    return view('admin.home.index');
+})->name('home');
