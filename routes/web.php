@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('inicio');
 
-//Auth
 Route::get('home', function () {
     return view('admin.home.index');
 })->name('home');
+//Auth
+Route::view('login','admin.auth.login');
+Route::post('login',[AuthController::class,'login'])->name('login');
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
