@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AuthController;
+use App\Http\Controllers\admin\TeamController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,7 @@ Route::get('home', function () {
 Route::view('login','admin.auth.login');
 Route::post('login',[AuthController::class,'login'])->name('login');
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+//Team
+Route::get('team', [TeamController::class, 'index'])->name('team');
+Route::post('team', [TeamController::class, 'store'])->name('team');

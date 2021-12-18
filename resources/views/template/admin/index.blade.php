@@ -38,8 +38,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center bg-dark navbar-brand-wrapper d-flex align-items-top justify-content-center">
-            <a class="navbar-brand brand-logo" href=""><img src="{{asset('template\images\logo.svg')}}" alt="logo"></a>
-            <a class="navbar-brand brand-logo-mini" href=""><img src="{{asset('template\images\logo-mini.svg')}}" alt="logo"></a>
+            <a class="navbar-brand brand-logo" href=""><img src="{{asset('template\admin\images\logo.svg')}}" alt="logo"></a>
+            <a class="navbar-brand brand-logo-mini" href=""><img src="{{asset('template\admin\images\logo-mini.svg')}}" alt="logo"></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center bg-primary">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -399,114 +399,10 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-hover" href="">
-                            <i class="icon-rocket menu-icon text-primary"></i>
-                            <span class="menu-title">DASHBOARD</span>
+                        <a class="nav-link nav-link-hover" href="{{route('team')}}">
+                            <i class="icon-user menu-icon text-primary"></i>
+                            <span class="menu-title">EQUIPO</span>
                         </a>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-empleados" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-people menu-icon text-primary"></i>
-                            <span class="menu-title">EMPLEADOS</span>
-                        </a>
-                        <div class="collapse" id="sidebar-empleados">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">EMPLEADOS</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-areas" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-directions menu-icon text-primary"></i>
-                            <span class="menu-title">ÁREAS</span>
-                        </a>
-                        <div class="collapse" id="sidebar-areas">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">ÁREAS</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-convocatorias" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-speech menu-icon text-primary"></i>
-                            <span class="menu-title">CONVOCATORIAS</span>
-                        </a>
-                        <div class="collapse" id="sidebar-convocatorias">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">POSTULANTES</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="">VACANTES</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-nomina" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-folder text-primary menu-icon"></i>
-                            <span class="menu-title">ASISTENCIA</span>
-                        </a>
-                        <div class="collapse" id="sidebar-nomina">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">ASISTENCIA</a></li>
-                            </ul>
-                        </div>
-                        <div class="collapse" id="sidebar-nomina">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">REPORTE</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-funciones" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-speech menu-icon text-primary"></i>
-                            <span class="menu-title">FUNCIONES</span>
-                        </a>
-                        <div class="collapse" id="sidebar-funciones">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">FUNCIONES</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-venta-web" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-speech menu-icon text-primary"></i>
-                            <span class="menu-title">VENTA WEB</span>
-                        </a>
-                        <div class="collapse" id="sidebar-venta-web">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">PLATOS</a></li>
-                            </ul>
-                        </div>
-                        <div class="collapse" id="sidebar-venta-web">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">PEDIDOS</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-empleados" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-people menu-icon text-primary"></i>
-                            <span class="menu-title">CLIENTES</span>
-                        </a>
-                        <div class="collapse" id="sidebar-empleados">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">CLIENTES</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-lg-block">
-                        <a class="nav-link nav-link-hover" data-toggle="collapse" href="#sidebar-reporte" aria-expanded="false" aria-controls="sidebar-layouts">
-                            <i class="icon-people menu-icon text-primary"></i>
-                            <span class="menu-title">REPORTES</span>
-                        </a>
-                        <div class="collapse" id="sidebar-reporte">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">REPORTE PLATOS</a></li>
-                            </ul>
-                        </div>
-                        <div class="collapse" id="sidebar-reporte">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="">REPORTE PEDIDOS</a></li>
-                            </ul>
-                        </div>
                     </li>
                 </ul>
             </nav>
