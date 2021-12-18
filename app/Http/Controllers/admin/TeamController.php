@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\Team;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class TeamController extends Controller
 {
@@ -31,6 +32,7 @@ class TeamController extends Controller
                 'url_cv' => $pathCv,
             ]);
         } catch (\Exception $e) {
+            Log::error('Error al crear el integrante :' . $e->getMessage() . ' Track:' .$e->getTrace());
             $response = ['status' => false];
         }
         return response()->json($response);

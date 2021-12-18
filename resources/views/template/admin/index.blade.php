@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>RR-HH Colpa</title>
+    <title>JP | Irazola</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('template\admin\vendors\mdi\css\materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('template\admin\vendors\simple-line-icons\css\simple-line-icons.css')}}">
@@ -20,7 +20,7 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="{{asset('template\admin\css\style.css')}}">
     <!-- endinject -->
-    <link rel="shortcut icon" href="{{asset('template\admin\images\favicon.png')}}">
+{{--    <link rel="shortcut icon" href="{{asset('template\admin\images\favicon.png')}}">--}}
     <link rel="stylesheet" href="{{asset('template\admin\vendors\font-awesome\css\font-awesome.min.css')}}">
 
     <link rel="stylesheet" href="{{asset('template\admin\vendors\datatables.net-bs4\dataTables.bootstrap4.css')}}">

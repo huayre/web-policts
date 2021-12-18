@@ -53,7 +53,7 @@
                     <div class="full">
                         <div class="center-desk">
                             <div class="logo" style="padding: 0px;margin: 0px">
-                                <a href="{{route('inicio')}}"><img src="{{asset('template/web/images/logo-jp.png')}}" style="height: 80px" alt="#"></a>
+                                <a href="{{route('home-web')}}"><img src="{{asset('template/web/images/logo-jp.png')}}" style="height: 80px" alt="#"></a>
                             </div>
                         </div>
                     </div>
@@ -63,9 +63,9 @@
                         <div class="limit-box">
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
-                                    <li class="active"> <a href="index.html">Inicio</a> </li>
+                                    <li class="active"> <a href="{{route('home-web')}}">Inicio</a> </li>
                                     <li><a href="brand.html">Conoce a Nelson Huayre</a></li>
-                                    <li><a href="special.html">Regidores</a></li>
+                                    <li><a href="{{route('team-web')}}">Regidores</a></li>
                                     <li><a href="contact.html">Plan de Trabajo</a></li>
                                     <li><a href="#"><i class="fa fa-facebook" style="background-color: red;padding: 10px;border-radius: 20%"></i></a></li>
                                 </ul>
@@ -90,117 +90,6 @@
 <div>
     @yield('content')
 </div>
-<!-- about -->
-<div class="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
-                <div class="about_img">
-                    <figure><img src="images/about.png" alt="img" /></figure>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
-                <div class="about_box">
-                    <h3>About Us</h3>
-                    <span>Our Mobile Shop</span>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the </p>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end about -->
-
-<!-- brand -->
-<div class="brand">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="titlepage">
-                    <h2>Our Brand</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="brand-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                    <div class="brand_box">
-                        <img src="images/1.png" alt="img" />
-                        <h3>$<strong class="red">100</strong></h3>
-                        <span>Mobile Phone</span>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                    <div class="brand_box">
-                        <img src="images/2.png" alt="img" />
-                        <h3>$<strong class="red">100</strong></h3>
-                        <span>Mobile Phone</span>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                    <div class="brand_box">
-                        <img src="images/3.png" alt="img" />
-                        <h3>$<strong class="red">100</strong></h3>
-                        <span>Mobile Phone</span>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <div class="brand_box">
-                        <img src="images/4.png" alt="img" />
-                        <h3>$<strong class="red">100</strong></h3>
-                        <span>Mobile Phone</span>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
-                    <div class="brand_box">
-                        <img src="images/5.png" alt="img" />
-                        <h3>$<strong class="red">100</strong></h3>
-                        <span>Mobile Phone</span>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
-                    <div class="brand_box">
-                        <img src="images/6.png" alt="img" />
-                        <h3>$<strong class="red">100</strong></h3>
-                        <span>Mobile Phone</span>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                        <i><img src="images/star.png"/></i>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <a class="read-more">See More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- end brand -->
 <!-- clients -->
 <div class="clients">

@@ -1,8 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//Admin
 use App\Http\Controllers\admin\AuthController;
 use App\Http\Controllers\admin\TeamController;
+//Web
+use App\Http\Controllers\web\TeamWebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +18,7 @@ use App\Http\Controllers\admin\TeamController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('inicio');
+Route::view('/','welcome')->name('home-web');
 
 Route::get('home', function () {
     return view('admin.home.index');
@@ -30,3 +31,6 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 //Team
 Route::get('team', [TeamController::class, 'index'])->name('team');
 Route::post('team', [TeamController::class, 'store'])->name('team');
+
+//Web Page
+Route::get('team-web', [TeamWebController::class, 'index'])->name('team-web');

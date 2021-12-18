@@ -22,14 +22,13 @@
     <div class="row">
         <div class="col-12">
             <div class="table-responsive">
-                <table class="table table-bordered" id="tabla_empleados">
+                <table class="table table-bordered" id="table-teams">
                     <thead>
                     <tr>
                         <th>Nro</th>
                         <th>Nombres</th>
-                        <th>DNI</th>
-                        <th>Nro. Celular</th>
-                        <th>Correo</th>
+                        <th>Foto</th>
+                        <th>Hoja De Vida</th>
                         <th>OPCIONES</th>
                     </tr>
                     </thead>
@@ -39,15 +38,14 @@
                             <td><small class="badge badge-dark">{{$loop->index + 1}}</small></td>
                             <td>{{$team->full_name}}</td>
                             <td><img src="{{asset($team->url_photo)}}"></td>
-{{--                            <td>{{$empleado->num_dni}}</td>--}}
-{{--                            <td>{{$empleado->num_celular}}</td>--}}
-{{--                            <td>{{$empleado->correo}}</td>--}}
-{{--                            <td>--}}
-{{--                                <button class="btn btn-default p-1" onclick="eliminarEmpleado('{{$empleado->id}}')"><i--}}
-{{--                                        class="fa fa-trash-o text-danger"></i></button>--}}
-{{--                                <button class="btn btn-default p-1"><i class="fa fa-edit text-dark"></i></button>--}}
-{{--                                <a href="{{$empleado->url_copia_dni}}" target="_blank" class="btn btn-default p-1"><i class="fa fa-address-card text-primary"></i></a>--}}
-{{--                            </td>--}}
+                            <td><a href="{{$team->url_cv}}" target="_blank">
+                                    <i class="fa fa-file-pdf-o text-danger"></i></a>
+                            </td>
+                            <td>
+                                <button class="btn btn-default p-1" onclick="eliminarEmpleado('{{$team->id}}')"><i
+                                        class="fa fa-trash-o text-danger"></i></button>
+                                <button class="btn btn-default p-1"><i class="fa fa-edit text-dark"></i></button>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>
