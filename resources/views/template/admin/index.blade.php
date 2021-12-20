@@ -404,6 +404,12 @@
                             <span class="menu-title">EQUIPO</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-hover" href="{{route('page')}}">
+                            <i class="icon-picture menu-icon text-primary"></i>
+                            <span class="menu-title">FOTOS DE PORTADA</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- partial -->

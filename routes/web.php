@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 //Admin
 use App\Http\Controllers\admin\AuthController;
 use App\Http\Controllers\admin\TeamController;
+use App\Http\Controllers\admin\FrontpageContoller;
 //Web
-use App\Http\Controllers\web\TeamWebController;
+use App\Http\Controllers\web\WebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,6 @@ use App\Http\Controllers\web\TeamWebController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::view('/','welcome')->name('home-web');
-
 Route::get('home', function () {
     return view('admin.home.index');
 })->name('home');
@@ -31,6 +29,10 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 //Team
 Route::get('team', [TeamController::class, 'index'])->name('team');
 Route::post('team', [TeamController::class, 'store'])->name('team');
-
+//Image Page
+Route::get('page', [FrontpageContoller::class, 'index'])->name('page');
+Route::delete('page/{id}', [FrontpageContoller::class, 'delete'])->name('page');
+Route::post('page', [FrontpageContoller::class, 'store'])->name('page');
 //Web Page
-Route::get('team-web', [TeamWebController::class, 'index'])->name('team-web');
+Route::get('/', [WebController::class, 'home'])->name('home-web');
+Route::get('team-web', [WebController::class, 'team'])->name('team-web');
