@@ -5,7 +5,7 @@
             <div class="carousel-inner">
                 @foreach($pages as $page)
                     <div class="carousel-item @if($loop->first) active @endif">
-                        <img class="first-slide" src="{{$page->url_img}}" alt="First slide" style=" width: 100%;height: 450px">
+                        <img class="first-slide" src="{{$page->url_img}}" alt="First slide" style=" width: 100%;max-height: 420px">
                     </div>
                 @endforeach
             </div>
