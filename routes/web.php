@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AuthController;
 use App\Http\Controllers\admin\TeamController;
 use App\Http\Controllers\admin\FrontpageContoller;
+use App\Http\Controllers\admin\NoticeController;
 //Web
 use App\Http\Controllers\web\WebController;
 
@@ -27,12 +28,14 @@ Route::post('login',[AuthController::class,'login'])->name('login');
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
 //Team
-Route::get('team', [TeamController::class, 'index'])->name('team');
-Route::post('team', [TeamController::class, 'store'])->name('team');
+Route::get('team', [TeamController::class, 'index'])->name('team.index');
+Route::post('team', [TeamController::class, 'store'])->name('team.store');
 //Image Page
-Route::get('page', [FrontpageContoller::class, 'index'])->name('page');
-Route::delete('page/{id}', [FrontpageContoller::class, 'delete'])->name('page');
-Route::post('page', [FrontpageContoller::class, 'store'])->name('page');
+Route::get('page', [FrontpageContoller::class, 'index'])->name('page.index');
+Route::delete('page/{id}', [FrontpageContoller::class, 'delete'])->name('page.delete');
+Route::post('page', [FrontpageContoller::class, 'store'])->name('page.store');
+//Notice
+Route::resource('notice', NoticeController::class);
 //Web Page
 Route::get('/', [WebController::class, 'home'])->name('home-web');
 Route::get('team-web', [WebController::class, 'team'])->name('team-web');

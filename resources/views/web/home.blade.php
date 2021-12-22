@@ -17,26 +17,20 @@
             </a>
         </div>
     </section>
-    <!-- about -->
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
-                    <div class="about_img">
-                        <figure><img src="images/about.png" alt="img" /></figure>
-                    </div>
+    <div class="container" style="margin-top: 3%">
+        <div style="height: 30px;padding-left:3px;margin-bottom:2%;border-left: red 4px solid">
+            <h2>NOTICIAS Y ANUNCIOS</h2>
+        </div>
+        <div class="row">
+            @foreach($notices as $notice)
+                <div class="col-md-4">
+                    <a href="/">
+                        <img src="{{asset($notice->img_notice)}}" style="max-height: 250px; width: 100%">
+                        <p>{{$notice->title}}</p>
+                        <small>{{$notice->created_at->diffForHumans()}}</small>
+                    </a>
                 </div>
-                <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
-                    <div class="about_box">
-                        <h3>About Us</h3>
-                        <span>Our Mobile Shop</span>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the </p>
-
-                    </div>
-
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
-    <!-- end about -->
 @endsection()

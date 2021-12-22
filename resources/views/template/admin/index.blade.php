@@ -399,15 +399,21 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-hover" href="{{route('team')}}">
+                        <a class="nav-link nav-link-hover" href="{{route('team.index')}}">
                             <i class="icon-user menu-icon text-primary"></i>
                             <span class="menu-title">EQUIPO</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-hover" href="{{route('page')}}">
+                        <a class="nav-link nav-link-hover" href="{{route('page.index')}}">
                             <i class="icon-picture menu-icon text-primary"></i>
                             <span class="menu-title">FOTOS DE PORTADA</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-hover" href="{{route('notice.index')}}">
+                            <i class="icon-picture menu-icon text-primary"></i>
+                            <span class="menu-title">NOTICIAS</span>
                         </a>
                     </li>
                 </ul>
