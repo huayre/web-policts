@@ -11,8 +11,8 @@ class WebController extends Controller
 {
     public function home()
     {
-        $pages = Page::all();
-        $notices = Notice::all();
+        $pages = Page::all('url_img');
+        $notices = Notice::all('title','extract','img_notice','id','created_at');
         return view('web.home')->with(['pages' => $pages, 'notices' => $notices]);
     }
 

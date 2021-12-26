@@ -17,20 +17,25 @@
             </a>
         </div>
     </section>
-    <div class="container" style="margin-top: 3%">
-        <div style="height: 30px;padding-left:3px;margin-bottom:2%;border-left: red 4px solid">
-            <h2>NOTICIAS Y ANUNCIOS</h2>
+    <div class="container" style="margin-top: 40px">
+        <div style="height: 30px;padding-left:3px;margin-bottom:2%;border-left: #0c85d0 4px solid">
+            <h2 style="color: #0c85d0">NOTICIAS Y ANUNCIOS</h2>
         </div>
-        <div class="row">
+{{--        <div class="row">--}}
             @foreach($notices as $notice)
-                <div class="col-md-4">
-                    <a href="/">
-                        <img src="{{asset($notice->img_notice)}}" style="max-height: 250px; width: 100%">
-                        <p>{{$notice->title}}</p>
-                        <small>{{$notice->created_at->diffForHumans()}}</small>
-                    </a>
+                <div class="row mb-5">
+                    <div class="col-md-5">
+                        <img src="{{asset($notice->img_notice)}}" style="max-height: 250px; width: 100%;border-radius: 8px">
+                    </div>
+                    <div class="col-md-7 border border-5">
+                        <a href="/">
+                            <p style="font-weight: bold">{{$notice->title}}</p>
+                            <p class="mt-2 text-muted">{{$notice->extract}}</p>
+                            <small class="text-muted">{{$notice->created_at->diffForHumans()}}</small>
+                        </a>
+                    </div>
                 </div>
             @endforeach
-        </div>
+{{--        </div>--}}
     </div>
 @endsection()
