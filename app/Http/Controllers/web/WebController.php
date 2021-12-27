@@ -12,7 +12,9 @@ class WebController extends Controller
     public function home()
     {
         $pages = Page::all('url_img');
-        $notices = Notice::all('title','extract','img_notice','id','created_at');
+        $notices = Notice::select('title','extract','img_notice','id','created_at')
+                ->orderBy('created_at','desc')
+                ->paginate(3);
         return view('web.home')->with(['pages' => $pages, 'notices' => $notices]);
     }
 
@@ -20,6 +22,12 @@ class WebController extends Controller
     {
         $listTeams = Team::all();
         return view('web.team')->with(['listTeams' => $listTeams]);
+    }
+
+    public function noticeDescription($id)
+    {
+        $notice = Notice::find($id);
+        return view('web.notice_description')->with(['notice' => $notice]);
     }
 
 }

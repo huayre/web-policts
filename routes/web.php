@@ -39,3 +39,4 @@ Route::resource('notice', NoticeController::class);
 //Web Page
 Route::get('/', [WebController::class, 'home'])->name('home-web');
 Route::get('team-web', [WebController::class, 'team'])->name('team-web');
+Route::get('notice-web/{id}', [WebController::class, 'noticeDescription'])->name('notice-web');

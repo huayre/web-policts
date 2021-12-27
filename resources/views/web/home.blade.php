@@ -21,21 +21,23 @@
         <div style="height: 30px;padding-left:3px;margin-bottom:2%;border-left: #0c85d0 4px solid">
             <h2 style="color: #0c85d0">NOTICIAS Y ANUNCIOS</h2>
         </div>
-{{--        <div class="row">--}}
             @foreach($notices as $notice)
+            <a href="{{route('notice-web',$notice->id)}}">
                 <div class="row mb-5">
                     <div class="col-md-5">
                         <img src="{{asset($notice->img_notice)}}" style="max-height: 250px; width: 100%;border-radius: 8px">
                     </div>
-                    <div class="col-md-7 border border-5">
-                        <a href="/">
-                            <p style="font-weight: bold">{{$notice->title}}</p>
-                            <p class="mt-2 text-muted">{{$notice->extract}}</p>
-                            <small class="text-muted">{{$notice->created_at->diffForHumans()}}</small>
-                        </a>
+                    <div class="col-md-7 border border-5" style="background-color: #DBE7E0">
+                        <p style="font-weight: bold">{{$notice->title}}</p>
+                        <small class="text-muted">{{$notice->created_at->diffForHumans()}}</small>
+                        <p class="mt-2 text-muted">{{$notice->extract}}</p>
+                        <small class="font-weight-bold" style="font-size: 12px">Leer Mas ...</small>
                     </div>
                 </div>
+            </a>
             @endforeach
-{{--        </div>--}}
+       <div style="float: right">
+           {{ $notices->links() }}
+       </div>
     </div>
 @endsection()
