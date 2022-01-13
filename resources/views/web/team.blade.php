@@ -1,6 +1,5 @@
 @extends('template.web.index')
 @section('content')
-<div style="height: 3px;background-color: red"></div>
 <div class="container-fluid">
     <div style="margin-top: 10%" class="row">
         @foreach($listTeams as $team)

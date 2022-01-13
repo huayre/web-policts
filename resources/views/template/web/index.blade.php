@@ -33,6 +33,16 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <style>
+        .style-font {
+            font-family: 'Luxurious Roman', cursive;
+            font-size: 60px;
+        }
+    </style>
 </head>
 <!-- body -->
 
@@ -45,8 +55,7 @@
 <!-- header -->
 <header>
     <!-- header inner -->
-    <div class="header">
-
+    <div class="header" style="border-bottom: #5cbf0a 4px solid;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
@@ -63,11 +72,10 @@
                         <div class="limit-box">
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
-                                    <li class="active"> <a href="{{route('home-web')}}">Inicio</a> </li>
-                                    <li><a href="brand.html">Conoce a Nelson Huayre</a></li>
-                                    <li><a href="{{route('team-web')}}">Regidores</a></li>
-                                    <li><a href="contact.html">Plan de Trabajo</a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" style="background-color: red;padding: 10px;border-radius: 20%"></i></a></li>
+                                    <li class="active"> <a href="{{route('home-web')}}" class="style-font" style="font-size: 20px;font-weight: bold;">Inicio</a> </li>
+                                    <li><a href="brand.html" class="style-font" style="font-size: 20px;font-weight: bold;">Conoce a Nelson Huayre</a></li>
+                                    <li><a href="{{route('team-web')}}" class="style-font" style="font-size: 20px;font-weight: bold;">Regidores</a></li>
+                                    <li><a href="contact.html" class="style-font" style="font-size: 20px;font-weight: bold;">Plan de Trabajo</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -76,9 +84,9 @@
                 <div class="col-md-6 offset-md-6">
                     <div class="location_icon_bottum">
                         <ul>
-                            <li><img src="{{asset('template/web/icon/call.png')}}" />(+71)9876543109</li>
-                            <li><img src="{{asset('template/web/icon/email.png')}}" />demo@gmail.com</li>
-                            <li><img src="{{asset('template/web/icon/loc.png')}}" />Location</li>
+                            <li>Honestidad</li>
+                            <li>Trabajo</li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
@@ -103,111 +111,7 @@
         </div>
     </div>
 </div>
-<div class="clients_red">
-    <div class="container">
-        <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#testimonial_slider" data-slide-to="0" class=""></li>
-                <li data-target="#testimonial_slider" data-slide-to="1" class="active"></li>
-                <li data-target="#testimonial_slider" data-slide-to="2" class=""></li>
-            </ul>
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <div class="testomonial_section">
-                        <div class="full center">
-                        </div>
-                        <div class="full testimonial_cont text_align_center cross_layout">
-                            <div class="cross_inner">
-                                <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
-                                </p>
-                                <div class="full text_align_center margin_top_30">
-                                    <img src="icon/testimonial_qoute.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item active">
-
-                    <div class="testomonial_section">
-                        <div class="full center">
-                        </div>
-                        <div class="full testimonial_cont text_align_center cross_layout">
-                            <div class="cross_inner">
-                                <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
-                                </p>
-                                <div class="full text_align_center margin_top_30">
-                                    <img src="icon/testimonial_qoute.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                    <div class="testomonial_section">
-                        <div class="full center">
-                        </div>
-                        <div class="full testimonial_cont text_align_center cross_layout">
-                            <div class="cross_inner">
-                                <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
-                                </p>
-                                <div class="full text_align_center margin_top_30">
-                                    <img src="icon/testimonial_qoute.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
 <!-- end clients -->
-<!-- contact -->
-<div class="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="titlepage">
-                    <h2>Contact us</h2>
-                </div>
-                <form class="main_form">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                            <input class="form-control" placeholder="Your name" type="text" name="Your Name">
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                            <input class="form-control" placeholder="Email" type="text" name="Email">
-                        </div>
-                        <div class=" col-md-12">
-                            <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                        </div>
-                        <div class="col-md-12">
-                            <textarea class="textarea" placeholder="Message"></textarea>
-                        </div>
-                        <div class=" col-md-12">
-                            <button class="send">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end contact -->
-
 <!-- footer -->
 <footer>
     <div id="contact" class="footer">

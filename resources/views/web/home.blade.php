@@ -27,7 +27,7 @@
                     <div class="col-md-5">
                         <img src="{{asset($notice->img_notice)}}" style="max-height: 250px; width: 100%;border-radius: 8px">
                     </div>
-                    <div class="col-md-7 border border-5" style="background-color: #DBE7E0">
+                    <div class="col-md-7 border border-5">
                         <p style="font-weight: bold">{{$notice->title}}</p>
                         <small class="text-muted">{{$notice->created_at->diffForHumans()}}</small>
                         <p class="mt-2 text-muted">{{$notice->extract}}</p>
